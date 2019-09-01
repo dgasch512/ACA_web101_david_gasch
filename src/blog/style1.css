@@ -19,6 +19,10 @@
     width: 100%;
     background-color: rgba(35, 61, 87, 0.712)
   }
+
+  h2 {
+    color: red;
+  }
  
   /* main {
     height: auto;
