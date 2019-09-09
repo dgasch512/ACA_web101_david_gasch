@@ -1,0 +1,278 @@
+.tag {
+  background-color: #5d5d5d;
+  color: white;
+  width: 100px;
+  height: 15px;
+  padding: 5px 0px 5px 0px;
+  margin-bottom: 20px;
+  /* text-transform: capitalize; */
+  /* justify-content: center; */
+  text-align:  center;
+  font-size: 13px;
+ 
+}
+
+  
+
+h5 {
+  font-size: 15px;
+}
+
+
+@media (min-width: 320px) {
+  .sidebar {
+    display: none;
+  }
+  .mainImg {
+    width: 90%;
+    display: flex;
+    margin: 5px 0 2px 0;
+  }
+  h2, h5 {
+    margin-bottom: 12px;
+    margin-top: 12px;
+  }
+  .tech {
+    /* margin-right: 40%; */
+  }
+  #brd {
+    display: flex;
+    justify-content: center;
+    /* padding: auto; */
+    width: 100%;
+    /* display: block; */
+    margin: auto;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  main {
+    margin: 20px 10% 10px 10%;
+    font-family: 'Lato', sans-serif;
+  }
+
+  .links {
+    color: white;
+    text-decoration: none;
+    text-emphasis: none;
+    width: 98px;
+  }
+
+  .menu a {
+    text-decoration: none;
+    color: rgba(253, 253, 253, .7);
+    border-bottom: .25px solid rgba(253, 253, 253, .7);
+    display: block;
+    /* display: inline-flex; */
+    padding: 5px 2px;
+    font-size: 13px;
+    font-weight: 300;
+    margin: 5px auto;
+  }
+
+  #left {
+    float: left;
+    overflow: auto;
+    margin-left: 15%;
+  }
+   #right {
+     margin-left: 15%;
+     margin-right: 15%;
+    overflow: auto;
+   }
+
+   footer {
+    display: flex;
+    background-color: #5d5d5d;
+    margin: 0;
+    padding: 17px;
+    font-family: 'Montserrat', sans-serif;
+   }
+
+  .menu h5 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    padding: 2px 0px 2px 0px;
+    margin: 6px auto;
+    text-align: left;
+  }
+
+  a i {
+    height: 15px;
+    width: 15px;
+    color: rgba(253, 253, 253, .7);
+    display: inline-block;
+    /* margin-left: 10px; */
+    float: right;
+  }
+}
+
+
+/* Small and up (Landscape Phones) */
+@media (min-width: 576px) {
+  .sidebar {
+    display: none;
+  }
+
+ .mainImg {
+   width: 90%; 
+ }
+
+  .menu {
+    display: none;
+  }
+  #b1 {
+    display: none;
+  }
+
+}
+
+/* Medium and up (Tablets) */
+@media (min-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+  .mainImg {
+    /* width: 90%; */
+    margin: 0;
+    /* max-width:1000px; */
+    /* max-height: 450px; */
+    overflow: hidden;
+    
+  }
+ 
+  #brd {
+    display: block;
+    justify-content: center;
+    /* padding: auto; */
+    width: 100%;
+    max-width:850px;
+    /* display: block; */
+    margin: 5px;
+    /* max-width:900px; */
+    max-height: 420px;
+    overflow: hidden;
+  }
+
+  #b1 {
+    display: none;
+  }
+
+  h5 {
+    font-size: 15px;
+  }
+.menu {
+  display: none;
+}
+/* #page {
+  max-height: 100%;
+} */
+
+
+}
+
+/* Large and up (Desktops) */
+@media (min-width: 992px) {
+
+  #b1 {
+    display: none;
+  }
+
+  .mainImg {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    /* max-width:700px; */
+    /* max-height: 500px; */
+    overflow: hidden;
+  }
+
+  #brd {
+    display: block;
+    justify-content: center;
+    padding: auto;
+    /* width: 100%; */
+    /* display: block; */
+    margin: 5px 0;
+    max-width: 100%;
+    /* max-height: 400px; */
+    overflow: hidden;
+  }
+  h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+  h5 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+  #page {
+    display: block;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-right: 10px;
+    float: left;
+    overflow: auto;
+  }
+  .menu {
+    display: none;
+  }
+  body {
+    display: flex;
+  }
+
+  #page .tag {
+    background-color: #5d5d5d;
+    color: white;
+    width: 130px;
+    height: 19px;
+    padding: 5px 0px 5px 0px;
+    margin-bottom: 20px;
+    /* text-transform: capitalize; */
+    /* justify-content: center; */
+    text-align:  center;
+    font-size: 17px;
+  }
+  .sidebar {
+    display: block;
+    width: 28%;
+    height: 100%;
+    overflow: auto;
+    margin: 5px 10px 5px 2px;
+    padding: 10px;
+    text-align: left;
+    font-family: 'Fira Sans', sans-serif;
+  }
+  .sidebar h4 {
+    border-bottom: 1px solid black;
+    padding-bottom: 7px;
+    font-size: 20px;
+  }
+  .sidebar ul {
+    padding-left: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+ 
+  .sidebar li {
+    /* text-decoration: none; */
+    list-style-type: none;
+    padding: 8px 0 8px 0;
+    font-size: 13px;
+    font-family: 'Fira Sans', sans-serif;
+  }
+  
+}
+
+/* Extra Large and up (Wide Screen Desktops)
+@media (min-width: 1200px) {
+
+} */
+
+/* font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Fira Sans', sans-serif; */
