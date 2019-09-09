@@ -1,0 +1,36 @@
+
+
+
+
+
+
+
+/* Small and up (Landscape Phones) */
+@media (min-width: 576px) {
+ .mainImg {
+   width: 90%;
+   height: 300px;
+   
+ }
+
+
+
+
+
+
+}
+
+/* Medium and up (Tablets) */
+@media (min-width: 768px) {
+
+}
+
+/* Large and up (Desktops) */
+@media (min-width: 992px) {
+
+}
+
+/* Extra Large and up (Wide Screen Desktops) */
+@media (min-width: 1200px) {
+
+}
