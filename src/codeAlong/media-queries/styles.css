@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+} 
+
+body {
+  margin: 0;
+}
+
+.main-container {
+  height: 100%;
+  width: 100%;
+  border: 1px solid slategray;
+
+}
+
+.item {
+  height: 300px;
+  width: 300px;
+  background-color: darkgreen;
+  margin: 10px auto;
+
+}
+
+@media (min-width: 576px) {
+  .item {
+    display: inline-block;
+  }
+
+
+}
