@@ -1,84 +1,128 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Code for Life</title>
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="./styles.css">
-	<link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/5d2e7fcbca.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./xxsty.css">
+
+  <title>Dashboard</title>
 
 </head>
 <body>
 
-<div class="grid">
-    <div class="nav">
-        <h2 class="logo"></h2>
-
-
-    </div>
-  
-		<div class="main">
-			<div id="content">
-				<h1>Code For Life</h1>
-				<h3>Lifestyle-based coding and responsive websites</h3>
-				<hr>
-				<button class="btn btn-default btn-lg"><i class="fas fa-terminal"></i> Get Started!</button>
-			</div>
+  <div class="grid">
+    <div class="navbar">
+        <div class="logo">
+          <h2>C<span class="four">4</span>L</h2>
+          <h5 class="line">|</h5>
+          <h5 class="code">Code 4 Life</h5>
+        </div>
+        <div class="nav-items">
+          <input type="text" name="search" id="search" value="Search">
+          <i class="search search-icon fas fa-search"></i>
+          <input type="button" id="login" value="Log In">
+        </div>
     </div>
 
-    <div class="sidebar">
-        <div class="cards">
-          <div class="crd crd-books">
-            
-            <div class="container">
-                <img src="./books.jpg" alt="Books" style="width:100%">
-              <h5><b>Books</b></h5>
+    <div id="over" class="header">
+        <div class="head head-1"></div>
+            <div class="head-1-img">
+              <h5 class="type">Books</h5>
             </div>
-          </div>
-          <div class="crd crd-videos">
-              <div class="container">
-                <img src="./videos.jpg" alt="Videos" style="width:100%">
-              
-                <h5><b>Videos</b></h5>
-              </div>
-              
-          </div>
-          <div class="crd crd-classes">
-              <div class="container"> 
-                  <img src="./classes.jpg" alt="Classes" style="width:100%">
-                  <h5><b>Classes</b></h5>
-              </div>
-          </div>
-          <div class="crd crd-podcasts">
-              <div class="container">
-                  <img src="./podcasts.jpg" alt="Podcasts" style="width:100%">
-                <h5><b>Podcasts</b></h5>
-              </div>
-          </div>
-      </div>
-         
-  </div>
+        </div>
 
+        <div class="head head-2">
+            <div class="head-2-img"></div>
+          <!-- <img src="./videos.jpg" alt="Videos"> -->
+          <div class="head5"><h5 class="type">Videos</h5></div>
+        </div>
+        <div class="head head-3">
+          <!-- <img src="./classes.jpg" alt="Classes"> -->
+          <div class="head5"><h5 class="type">Classes</h5></div>
+        </div>
+        <div class="head head.4">
+          <!-- <img src="./podcasts.jpg" alt="Podcasts"> -->
+          <div class="head5"><h5 class="type">Podcasts</h5></div>
+        </div>
+    </div>
 
+    <div class="main">
+        <div class="card">
+          <img src="code.jpg" alt="" class="card-img">
+          <div class="card-head">
+            <h4>Craft Environment</h4>
+            <p class="subtitle">Photo by Fotis Fotopoulos on Unsplash</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./love.jpg" alt="" class="card-img">
+          <div class="card-head">
+            <h4>Love the Craft</h4>
+            <p class="subtitle">Photo by Olena Sergienko on Unsplash</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./screens.jpg" alt="" class="card-img">
+          <div class="card-head">
+            <h4>Maximaze Exposure</h4>
+            <p class="subtitle">Photo by Max Duzij on Unsplash</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./keyboard.jpg" alt="" class="card-img">
+          <div class="card-head">
+            <h4>Make it Colorful</h4>
+            <p class="subtitle">Photo by Marius Niveri on Unsplash</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="mac.jpg" alt="" class="card-img">
+          <div class="card-head">
+            <h4>Great Tools</h4>
+            <p class="subtitle">Photo by Kyle Sung on Unsplash</p>
+          </div>
         </div>
 
     </div>
 
-    <div class="ftr">
-        <a class="small-text" href="https://austincodingacademy.com/">© Austin Coding Academy</a>
+    <div class="sidebar">
+        <i id="comp-code" class="fas fa-laptop-code"></i>
+        <br>
+        <i class="nav-icon fas fa-home"></i>
+        <p class="nav-text">Home</p>
+        <i class="nav-icon fas fa-folder-open"></i>
+        <p class="nav-text">Files</p>
+        <i class="nav-icon fas fa-users"></i>
+        <p class="nav-text">Team</p>
+        <i class="nav-icon far fa-calendar-alt"></i>
+        <p class="nav-text">Events</p>
+        <i class="nav-icon far fa-address-book final"></i>
+        <p class="nav-text contact">Contact</p>
+        <div id="contact-info" class="nav-text">
+          <p class="address">
+          515 Congress Ave <br>
+          Suite 2200 <br>
+          Austin, TX 78701
+          </p>
+          <br>
+          <p class="comm">
+          EM: help@self.inc <br>
+          PH: (877)886-0999 <br>
+          FX: It's 2019, No
+          </p>
+        </div>
 
     </div>
-</div>
+    <div class="footer">
+        <a class="ftr-text" href="https://austincodingacademy.com/">© Austin Coding Academy</a>
+    </div>
 
 
 
-
-
-
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.js"></script>
-
-
+  </div>
 
 </body>
 </html>
-
