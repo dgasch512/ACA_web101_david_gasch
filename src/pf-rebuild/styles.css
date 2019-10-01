@@ -57,12 +57,12 @@ header {
 } */
 .neon-wrapper {
   box-shadow:
-  0 0 0.1vw  0.4vw #e5c5f8,   
-  0 0 0.4vw  0.6vw #7b3bb8, 
-  0 0   4vw  0.4vw #4b0e63,
-  inset 0 0 1.5vw  0.4vw #4b0e63,
-  inset 0 0 0.4vw  0.2vw #7b3bb8,
-  inset 0 0 0.5vw  0.2vw #fbf7ff;
+  0 0 0.1vw  0.4vw #ffc6fc,   
+  0 0 0.4vw  0.6vw #c84bd8, 
+  0 0   4vw  0.4vw #750b79,
+  inset 0 0 1.5vw  0.4vw #750b79,
+  inset 0 0 0.4vw  0.2vw #c84bd8,
+  inset 0 0 0.5vw  0.2vw #ffc6fc;
   border-radius: .6rem;
   padding: 8px;
   margin-left: 25px;
@@ -71,16 +71,16 @@ header {
   font-family:'Unica One', cursive;
   font-size: 2.2rem;
   letter-spacing: 5px;
-  color: #e5c5f8;
+  color: #f9b7fc;
   margin: 0;
   text-shadow: 
-  .1vw 0vw .25vw #e5c5f8, .2vw 0vw .25vw #e5c5f8, .4vw 0vw .25vw #e5c5f8, 
-  .1vw 0vw   0vw #7b3bb8, .2vw 0vw   0vw #7b3bb8, .4vw 0vw   0vw #7b3bb8,
-  .1vw 0vw  .1vw #7b3bb8, .2vw 0vw  .1vw #7b3bb8, .4vw 0vw  .1vw #7b3bb8,
-  .1vw 0vw   2vw #7b3bb8, .2vw 0vw   2vw #7b3bb8, .4vw 0vw   2vw #7b3bb8, 
-  .1vw 0vw   1vw #4b0e63, .2vw 0vw   1vw #4b0e63, .4vw 0vw   5vw #4b0e63, 
-  .1vw 0vw   5vw #4b0e63, .2vw 0vw  20vw #4b0e63, .4vw 0vw  10vw #4b0e63,
-  .1vw 0vw  10vw #4b0e63, .2vw 0vw  30vw #4b0e63, .4vw 0vw  10vw #4b0e63;
+  .1vw 0vw .25vw #ffc6fc, .2vw 0vw .25vw #ffc6fc, .4vw 0vw .25vw #ffc6fc, 
+  .1vw 0vw   0vw #c84bd8, .2vw 0vw   0vw #c84bd8, .4vw 0vw   0vw #c84bd8,
+  .1vw 0vw  .1vw #c84bd8, .2vw 0vw  .1vw #c84bd8, .4vw 0vw  .1vw #c84bd8,
+  .1vw 0vw   2vw #c84bd8, .2vw 0vw   2vw #c84bd8, .4vw 0vw   2vw #c84bd8, 
+  .1vw 0vw   1vw #750b79, .2vw 0vw   1vw #750b79, .4vw 0vw   5vw #750b79, 
+  .1vw 0vw   5vw #750b79, .2vw 0vw  20vw #750b79, .4vw 0vw  10vw #750b79,
+  .1vw 0vw  10vw #750b79, .2vw 0vw  30vw #750b79, .4vw 0vw  10vw #750b79;
 }
 
 .main {
@@ -88,6 +88,7 @@ header {
   height: 400px;
   background-color: #222;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -136,8 +137,20 @@ header {
   .1vw 0vw   5vw #26740f, .2vw 0vw  20vw #26740f, .4vw 0vw  10vw #26740f,
   .1vw 0vw  10vw #26740f, .2vw 0vw  30vw #26740f, .4vw 0vw  10vw #26740f;
 }
+.social {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-size: 11px;
+  width: 110px;
+  align-self: flex-start;
+  margin-left: 20px;
+  margin-top: 60px;
+}
 
-.quote-selection {
+
+.quote-section {
   position: relative;
 }
 #quote-1 {
@@ -172,7 +185,7 @@ header {
 .quote {
   font-family: 'Big Shoulders Display', cursive;
   font-size: 25px;
-  color: #e5c5f8;
+  color: #ffc6fc;
   line-height: 1.6em;
   text-align: end;
 }
@@ -213,6 +226,9 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   box-shadow: 4px 4px 10px #111;
+}
+.spot:hover {
+  box-shadow: 5px 5px 20px #111;
 }
 .gallery {
   background-image: url(./images/sign.jpg);
