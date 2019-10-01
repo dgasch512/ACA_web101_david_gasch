@@ -91,26 +91,38 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url();
+  background-image: url(./images/page-2.jpg);
+  background-position: center;
+  background-size: cover;
 }
 .text {
   box-sizing: border-box;
   width: 66%;
-  height: 350px;
-  background-color: #222;
+  height: 400px;
+  margin-top: 0px;
+  /* background-color: #222; */
   padding: 25px 15px;
   font-family: 'Fira Sans', sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+.text-1 {
+  background-color: #222;
+  opacity: .9;
+  position: absolute;
+}
+.text-2 {
+  position: relative;
+}
 
 .neon-name {
   font-family: 'Catamaran', sans-serif;
-  font-size: 1.9rem;
+  font-size: 1.5rem;
   letter-spacing: 4px;
   color: #cffdd7;
   margin: 0 0 0 8px;
+  text-transform: uppercase;
   text-shadow: 
   .1vw 0vw .25vw #cffdd7, .2vw 0vw .25vw #cffdd7, .4vw 0vw .25vw #cffdd7, 
   .1vw 0vw   0vw #63d436, .2vw 0vw   0vw #63d436, .4vw 0vw   0vw #63d436,
@@ -120,6 +132,14 @@ header {
   .1vw 0vw   5vw #26740f, .2vw 0vw  20vw #26740f, .4vw 0vw  10vw #26740f,
   .1vw 0vw  10vw #26740f, .2vw 0vw  30vw #26740f, .4vw 0vw  10vw #26740f;
 }
+.content {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: flex-start; */
+  flex-wrap: wrap;
+  height: 80%;
+  margin-top:10px;
+}
 .intro {
   font-family: 'Fira Sans', sans-serif;
   color: white;
@@ -127,4 +147,10 @@ header {
   margin-top: 20px;
   letter-spacing: .1em;
   line-height: 1.5em;
+}
+.img {
+  width: 110px;
+  height: 150px;
+  float: left;
+  border: 1px solid #222;
 }
