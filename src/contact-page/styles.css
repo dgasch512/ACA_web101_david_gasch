@@ -1,0 +1,156 @@
+body {
+  margin:0;
+  padding:0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header {
+  background-color: #222;
+  height: 90px;
+  width: 100%;
+  /* background-image: url(./images/brick.jpg); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: -570px;
+}
+.menu {
+  /* width: 85px;
+  height: 40px; */
+  margin-right: 30px;
+  background-color: #222;
+  color: white;
+  border: 2px solid white;
+  border-radius: 2px;
+  font-family:'Unica One', cursive;
+  font-size: 15px;
+  padding: 5px;
+}
+.name {
+  font-family:'Unica One', cursive;
+  color: white;
+  font-size: 35px;
+  margin-right: 40px;
+  letter-spacing: .3rem;
+  text-transform: uppercase;
+}
+.wrapper {
+  /* background-color: #222; */
+  height: 90px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(
+                     rgba(20,20,20, .5), 
+                     rgba(20,20,20, .5));
+  /* padding: 10px 220px; */
+  /* overflow: hidden; */
+}
+/* @font-face {
+  font-family: neon;
+  src: url(../../../../../../gaschdammit/Library/Fonts/hellodenverdisplaybold_v1.6.ttf);
+} */
+/* @font-face {
+  font-family: neon;
+  src: url(../../../../../../gaschdammit/Library/Fonts/hellodenverdisplaybold_v1.6.ttf);
+} */
+.neon-wrapper {
+  box-shadow:
+  0 0 0.1vw  0.4vw #ffc6fc,   
+  0 0 0.4vw  0.6vw #c84bd8, 
+  0 0   4vw  0.4vw #750b79,
+  inset 0 0 1.5vw  0.4vw #750b79,
+  inset 0 0 0.4vw  0.2vw #c84bd8,
+  inset 0 0 0.5vw  0.2vw #ffc6fc;
+  border-radius: .6rem;
+  padding: 8px;
+  margin-left: 25px;
+}
+.neon-text {
+  font-family:'Unica One', cursive;
+  font-size: 2.2rem;
+  letter-spacing: 5px;
+  color: #f9b7fc;
+  margin: 0;
+  text-shadow: 
+  .1vw 0vw .25vw #ffc6fc, .2vw 0vw .25vw #ffc6fc, .4vw 0vw .25vw #ffc6fc, 
+  .1vw 0vw   0vw #c84bd8, .2vw 0vw   0vw #c84bd8, .4vw 0vw   0vw #c84bd8,
+  .1vw 0vw  .1vw #c84bd8, .2vw 0vw  .1vw #c84bd8, .4vw 0vw  .1vw #c84bd8,
+  .1vw 0vw   2vw #c84bd8, .2vw 0vw   2vw #c84bd8, .4vw 0vw   2vw #c84bd8, 
+  .1vw 0vw   1vw #750b79, .2vw 0vw   1vw #750b79, .4vw 0vw   5vw #750b79, 
+  .1vw 0vw   5vw #750b79, .2vw 0vw  20vw #750b79, .4vw 0vw  10vw #750b79,
+  .1vw 0vw  10vw #750b79, .2vw 0vw  30vw #750b79, .4vw 0vw  10vw #750b79;
+}
+
+.main {
+  width:100%;
+  height: 500px;
+  /* background-color: #222; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(./images/page-2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.text {
+  box-sizing: border-box;
+  width: 66%;
+  height: 400px;
+  margin-top: 0px;
+  /* background-color: #222; */
+  padding: 25px 15px;
+  font-family: 'Fira Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.text-1 {
+  background-color: #222;
+  opacity: .9;
+  position: absolute;
+}
+.text-2 {
+  position: relative;
+}
+
+.neon-name {
+  font-family: 'Catamaran', sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 4px;
+  color: #cffdd7;
+  margin: 0 0 0 8px;
+  text-transform: uppercase;
+  text-shadow: 
+  .1vw 0vw .25vw #cffdd7, .2vw 0vw .25vw #cffdd7, .4vw 0vw .25vw #cffdd7, 
+  .1vw 0vw   0vw #63d436, .2vw 0vw   0vw #63d436, .4vw 0vw   0vw #63d436,
+  .1vw 0vw  .1vw #63d436, .2vw 0vw  .1vw #63d436, .4vw 0vw  .1vw #63d436,
+  .1vw 0vw   2vw #63d436, .2vw 0vw   2vw #63d436, .4vw 0vw   2vw #63d436, 
+  .1vw 0vw   1vw #26740f, .2vw 0vw   1vw #26740f, .4vw 0vw   5vw #26740f, 
+  .1vw 0vw   5vw #26740f, .2vw 0vw  20vw #26740f, .4vw 0vw  10vw #26740f,
+  .1vw 0vw  10vw #26740f, .2vw 0vw  30vw #26740f, .4vw 0vw  10vw #26740f;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  float: left;
+  /* justify-content: flex-start; */
+  flex-wrap: wrap;
+  height: 80%;
+  margin-top:10px;
+}
+.intro {
+  font-family: 'Fira Sans', sans-serif;
+  color: white;
+  font-size: 13px;
+  margin-top: 20px;
+  letter-spacing: .1em;
+  line-height: 1.5em;
+}
+.img {
+  width: 110px;
+  height: 150px;
+  border: 1px solid #222;
+}
