@@ -69,7 +69,7 @@ header {
 }
 .neon-text {
   font-family:'Unica One', cursive;
-  font-size: 2.2rem;
+  font-size: 2.1rem;
   letter-spacing: 5px;
   color: #f9b7fc;
   margin: 0;
@@ -85,7 +85,7 @@ header {
 
 .main {
   width:100%;
-  height: 500px;
+  height: 630px;
   /* background-color: #222; */
   display: flex;
   flex-direction: column;
@@ -97,8 +97,8 @@ header {
 }
 .text {
   box-sizing: border-box;
-  width: 66%;
-  height: 400px;
+  width: 75%;
+  height: 500px;
   margin-top: 0px;
   /* background-color: #222; */
   padding: 25px 15px;
@@ -109,7 +109,7 @@ header {
 }
 .text-1 {
   background-color: #222;
-  opacity: .9;
+  opacity: .85;
   position: absolute;
 }
 .text-2 {
@@ -134,23 +134,49 @@ header {
 }
 .content {
   display: flex;
-  flex-direction: row;
-  float: left;
+  flex-direction: column;
+  /* float: left; */
   /* justify-content: flex-start; */
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   height: 80%;
   margin-top:10px;
+  align-items: center;
 }
 .intro {
   font-family: 'Fira Sans', sans-serif;
   color: white;
-  font-size: 13px;
+  font-size: 15px;
   margin-top: 20px;
   letter-spacing: .1em;
   line-height: 1.5em;
 }
 .img {
-  width: 110px;
-  height: 150px;
+  max-width: 150px;
+  height: 280px;
   border: 1px solid #222;
+  /* float: left; */
 }
+.footer {
+  background-color: white;
+  height: 30px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+.footer a {
+  color: #222;
+  font-family: 'Unica One', cursive;
+  text-decoration: none;
+}
+
+
+
+
+
+
+/* Wrap text, media
+.content {
+  flex-wrap: wrap;
+  height: 80%;
+  margin-top:10px;
+} */
