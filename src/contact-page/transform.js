@@ -1,12 +1,13 @@
-$(".address").click(function() {
-  $('.address').toggleClass('transform-active');
+$(".address-icon").hover(function() {
+  $('.grid').toggleClass('grid-transform-address');
 });
-$(".phone").click(function() {
-  $('.phone').toggleClass('transform-active');
+$(".phone i").hover(function() {
+  $('.phone i').toggleClass('transform-phone');
 });
-$(".email").click(function() {
-  $('.email').toggleClass('transform-active');
+$(".email i").hover(function() {
+  $('.email i').toggleClass('transform-email');
 });
-$(".git").click(function() {
-  $('.git').toggleClass('transform-active');
+$("#git").hover(function() {
+  $('.git').toggleClass('transform-git');
 });
+
