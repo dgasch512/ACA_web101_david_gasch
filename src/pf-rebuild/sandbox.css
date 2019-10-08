@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    padding: 0;
+    background:#000000;
+
+}
+
+
+
+
+.wrapper {
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000000; 
+}
+.txt {
+    color: #ffffff;
+    background:#000000;
+    font-size:200px;
+    font-weight: bold;
+    font-family: Arial;
+    text-transform: uppercase;
+}
+.txt::before {
+    content: 'hey';
+    position: absolute;
+    mix-blend-mode: difference;
+    filter: blur(3px);
+}
+.neon-wrapper {
+    display:inline-flex;
+    filter: brightness(200%);
+    overflow: hidden;
+}
+.gradient{
+    background: linear-gradient(179.84302565436224deg, rgba(118, 207, 41,1) 8.91798418972332%,rgba(90, 64, 143,1) 67.00119400527008%);
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height:100%;
+    mix-blend-mode: multiply;
+}
+.dodge {
+    background: radial-gradient(circle,white,black 35%) center / 25% 25%;
+    position: absolute;
+    top:-100%;
+    left:-100%;
+    right:0;
+    bottom:0;
+    mix-blend-mode: color-dodge;
+    animation: dodge-area 3s linear infinite;
+}
+@keyframes dodge-area {
+    to {
+        transform: translate(50%,50%);
+    }
+
+    /* purple/orange 
+    
+    linear-gradient(130.56298893149847deg, rgba(97, 116, 180,1) 35.37138072601556%,rgba(229, 151, 64,1) 73.32108902333621%)
+
+
+    linear-gradient(114.32418567786442deg, rgba(91, 52, 162,1) 39.00082829155863%,rgba(240, 94, 7,1) 97.18668971477959%)
+
+
+
+    linear-gradient(179.84302565436224deg, rgba(118, 207, 41,1) 8.91798418972332%,rgba(90, 64, 143,1) 67.00119400527008%)
+    */
+
+ SHINE
+
+ .wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(wall.jpg);
+  background-size: auto 100%;
+}
+@font-face {
+  font-family: neon;
+  src: url(hellodenverdisplayregular_v1.6.ttf);
+}
+.neon-wrapper {
+  box-shadow:
+  0 0 0.1vw  0.4vw #e5c5f8,   
+  0 0 0.4vw  0.6vw #7b3bb8, 
+  0 0   4vw  0.4vw #4b0e63,
+  inset 0 0 1.5vw  0.4vw #4b0e63,
+  inset 0 0 0.4vw  0.2vw #7b3bb8,
+  inset 0 0 0.5vw  0.2vw #fbf7ff;
+  border-radius: 1.5rem;
+}
+.neon-text {
+  font-family: neon;
+  font-size: 14rem;
+  color: #e5c5f8;
+  padding: 0 3.5rem 0 3.5rem;
+  text-shadow: 
+  .1vw 0vw .25vw #e5c5f8, .2vw 0vw .25vw #e5c5f8, .4vw 0vw .25vw #e5c5f8, 
+  .1vw 0vw   0vw #7b3bb8, .2vw 0vw   0vw #7b3bb8, .4vw 0vw   0vw #7b3bb8,
+  .1vw 0vw  .1vw #7b3bb8, .2vw 0vw  .1vw #7b3bb8, .4vw 0vw  .1vw #7b3bb8,
+  .1vw 0vw   2vw #7b3bb8, .2vw 0vw   2vw #7b3bb8, .4vw 0vw   2vw #7b3bb8, 
+  .1vw 0vw   1vw #4b0e63, .2vw 0vw   1vw #4b0e63, .4vw 0vw   5vw #4b0e63, 
+  .1vw 0vw   5vw #4b0e63, .2vw 0vw  20vw #4b0e63, .4vw 0vw  10vw #4b0e63,
+  .1vw 0vw  10vw #4b0e63, .2vw 0vw  30vw #4b0e63, .4vw 0vw  10vw #4b0e63;

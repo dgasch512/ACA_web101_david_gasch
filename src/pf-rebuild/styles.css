@@ -1,0 +1,383 @@
+body {
+  margin:0;
+  padding:0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #222;
+}
+header {
+  background-color: #222;
+  height: 90px;
+  width: 100%;
+  background-image: url(./images/brick.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: -570px;
+}
+.menu {
+  margin-right: 30px;
+  background-color: #222;
+  color: white;
+  border: 2px solid white;
+  border-radius: 2px;
+  font-family:'Unica One', cursive;
+  font-size: 15px;
+  padding: 5px;
+}
+.name {
+  font-family:'Unica One', cursive;
+  color: white;
+  font-size: 35px;
+  margin-right: 40px;
+  letter-spacing: .3rem;
+  text-transform: uppercase;
+}
+.wrapper {
+  height: 90px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(
+                     rgba(20,20,20, .5), 
+                     rgba(20,20,20, .5));
+}
+
+.neon-wrapper {
+  box-shadow:
+  0 0 0.1vw  0.4vw #ffc6fc,   
+  0 0 0.4vw  0.6vw #c84bd8, 
+  0 0   4vw  0.4vw #750b79,
+  inset 0 0 1.5vw  0.4vw #750b79,
+  inset 0 0 0.4vw  0.2vw #c84bd8,
+  inset 0 0 0.5vw  0.2vw #ffc6fc;
+  border-radius: .6rem;
+  padding: 8px;
+  margin-left: 25px;
+}
+.neon-text {
+  font-family:'Unica One', cursive;
+  font-size: 2.2rem;
+  letter-spacing: 5px;
+  color: #f9b7fc;
+  margin: 0;
+  text-shadow: 
+  .1vw 0vw .25vw #ffc6fc, .2vw 0vw .25vw #ffc6fc, .4vw 0vw .25vw #ffc6fc, 
+  .1vw 0vw   0vw #c84bd8, .2vw 0vw   0vw #c84bd8, .4vw 0vw   0vw #c84bd8,
+  .1vw 0vw  .1vw #c84bd8, .2vw 0vw  .1vw #c84bd8, .4vw 0vw  .1vw #c84bd8,
+  .1vw 0vw   2vw #c84bd8, .2vw 0vw   2vw #c84bd8, .4vw 0vw   2vw #c84bd8, 
+  .1vw 0vw   1vw #750b79, .2vw 0vw   1vw #750b79, .4vw 0vw   5vw #750b79, 
+  .1vw 0vw   5vw #750b79, .2vw 0vw  20vw #750b79, .4vw 0vw  10vw #750b79,
+  .1vw 0vw  10vw #750b79, .2vw 0vw  30vw #750b79, .4vw 0vw  10vw #750b79;
+}
+
+.main {
+  width:100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.text {
+  box-sizing: border-box;
+  width: 85%;
+  max-width: 500px;
+  height: 220px;
+  background-color: #222;
+  padding: 25px 15px;
+  font-family: 'Fira Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.greeting .neon-text {
+  font-size: 1.1rem;
+}
+.greeting {
+  font-family: 'Fira Sans', sans-serif;
+  color: white;
+  text-transform: uppercase;
+  font-size: 18px;
+  
+}
+.intro {
+  font-family: 'Fira Sans', sans-serif;
+  color: white;
+  font-size: 13px;
+  margin-top: 20px;
+  letter-spacing: .1em;
+  line-height: 1.5em;
+}
+.neon-name {
+  font-family: 'Catamaran', sans-serif;
+  font-size: 1.9rem;
+  letter-spacing: 4px;
+  color: #cffdd7;
+  margin: 0 0 0 8px;
+  text-shadow: 
+  .1vw 0vw .25vw #cffdd7, .2vw 0vw .25vw #cffdd7, .4vw 0vw .25vw #cffdd7, 
+  .1vw 0vw   0vw #63d436, .2vw 0vw   0vw #63d436, .4vw 0vw   0vw #63d436,
+  .1vw 0vw  .1vw #63d436, .2vw 0vw  .1vw #63d436, .4vw 0vw  .1vw #63d436,
+  .1vw 0vw   2vw #63d436, .2vw 0vw   2vw #63d436, .4vw 0vw   2vw #63d436, 
+  .1vw 0vw   1vw #26740f, .2vw 0vw   1vw #26740f, .4vw 0vw   5vw #26740f, 
+  .1vw 0vw   5vw #26740f, .2vw 0vw  20vw #26740f, .4vw 0vw  10vw #26740f,
+  .1vw 0vw  10vw #26740f, .2vw 0vw  30vw #26740f, .4vw 0vw  10vw #26740f;
+
+  animation-name: flicker;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+  animation-delay: 15s;
+}
+@keyframes flicker {
+  0%     {text-shadow: 
+    .1vw 0vw .25vw #cffdd7, .2vw 0vw .25vw #cffdd7, .4vw 0vw .25vw #cffdd7, 
+  .1vw 0vw   0vw #63d436, .2vw 0vw   0vw #63d436, .4vw 0vw   0vw #63d436,
+  .1vw 0vw  .1vw #63d436, .2vw 0vw  .1vw #63d436, .4vw 0vw  .1vw #63d436,
+  .1vw 0vw   2vw #63d436, .2vw 0vw   2vw #63d436, .4vw 0vw   2vw #63d436, 
+  .1vw 0vw   1vw #26740f, .2vw 0vw   1vw #26740f, .4vw 0vw   5vw #26740f, 
+  .1vw 0vw   5vw #26740f, .2vw 0vw  20vw #26740f, .4vw 0vw  10vw #26740f,
+  .1vw 0vw  10vw #26740f, .2vw 0vw  30vw #26740f, .4vw 0vw  10vw #26740f;
+  }
+  1%    {text-shadow: none;}
+  2%   {text-shadow: 
+  .1vw 0vw .25vw #cffdd7, .2vw 0vw .25vw #cffdd7, .4vw 0vw .25vw #cffdd7, 
+  .1vw 0vw   0vw #63d436, .2vw 0vw   0vw #63d436, .4vw 0vw   0vw #63d436,
+  .1vw 0vw  .1vw #63d436, .2vw 0vw  .1vw #63d436, .4vw 0vw  .1vw #63d436,
+  .1vw 0vw   2vw #63d436, .2vw 0vw   2vw #63d436, .4vw 0vw   2vw #63d436, 
+  .1vw 0vw   1vw #26740f, .2vw 0vw   1vw #26740f, .4vw 0vw   5vw #26740f, 
+  .1vw 0vw   5vw #26740f, .2vw 0vw  20vw #26740f, .4vw 0vw  10vw #26740f,
+  .1vw 0vw  10vw #26740f, .2vw 0vw  30vw #26740f, .4vw 0vw  10vw #26740f;
+}
+  98%   {text-shadow: 
+  .1vw 0vw .25vw #cffdd7, .2vw 0vw .25vw #cffdd7, .4vw 0vw .25vw #cffdd7, 
+  .1vw 0vw   0vw #63d436, .2vw 0vw   0vw #63d436, .4vw 0vw   0vw #63d436,
+  .1vw 0vw  .1vw #63d436, .2vw 0vw  .1vw #63d436, .4vw 0vw  .1vw #63d436,
+  .1vw 0vw   2vw #63d436, .2vw 0vw   2vw #63d436, .4vw 0vw   2vw #63d436, 
+  .1vw 0vw   1vw #26740f, .2vw 0vw   1vw #26740f, .4vw 0vw   5vw #26740f, 
+  .1vw 0vw   5vw #26740f, .2vw 0vw  20vw #26740f, .4vw 0vw  10vw #26740f,
+  .1vw 0vw  10vw #26740f, .2vw 0vw  30vw #26740f, .4vw 0vw  10vw #26740f;
+}
+  99%   {text-shadow: none;}
+  100%   {text-shadow: 
+  .1vw 0vw .25vw #cffdd7, .2vw 0vw .25vw #cffdd7, .4vw 0vw .25vw #cffdd7, 
+  .1vw 0vw   0vw #63d436, .2vw 0vw   0vw #63d436, .4vw 0vw   0vw #63d436,
+  .1vw 0vw  .1vw #63d436, .2vw 0vw  .1vw #63d436, .4vw 0vw  .1vw #63d436,
+  .1vw 0vw   2vw #63d436, .2vw 0vw   2vw #63d436, .4vw 0vw   2vw #63d436, 
+  .1vw 0vw   1vw #26740f, .2vw 0vw   1vw #26740f, .4vw 0vw   5vw #26740f, 
+  .1vw 0vw   5vw #26740f, .2vw 0vw  20vw #26740f, .4vw 0vw  10vw #26740f,
+  .1vw 0vw  10vw #26740f, .2vw 0vw  30vw #26740f, .4vw 0vw  10vw #26740f;
+}
+}
+.media .neon-name {
+  margin-left: 40px;
+  font-family: 'Catamaran', sans-serif;
+  text-transform: uppercase;
+}
+.social {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-size: 11px;
+  width: 110px;
+  align-self: flex-start;
+  margin-left: 20px;
+  margin-top: 60px;
+
+  animation-name: social;
+  animation-duration: 3s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes social {
+  0%  {transform: translateX(-200px)}
+  100% {transform: translateX(15px)}
+}
+.quote-section {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  /* background-color: #222; */
+  width:100%;
+}
+#quote-1 {
+  width: 100%;
+  max-width: 600px;
+  height: 250px;
+  border: 3px solid #f3daff;
+  border-right: none;
+  box-sizing: border-box;
+  /* padding: 20px; */
+  background-image: url(./images/good-times.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* opacity: 0.4; */
+  position:absolute;
+  background-position-y: -60px;
+}
+#quote-2 {
+  width: 100%;
+  max-width: 600px;
+  height: 250px;
+  box-sizing: border-box;
+  position: relative;
+  /* box-sizing: content-box; */
+  top: 0;
+  left: 0;
+  padding: 25px;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+                     rgba(20,20,20, .5), 
+                     rgba(20,20,20, .5));
+}
+.quote {
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 25px;
+  color: #ffc6fc;
+  line-height: 1.6em;
+  text-align: end;
+}
+.media {
+  background-color: #222;
+  width: 100%;
+  padding: 20px 0;
+}
+.types {
+  box-sizing: content-box;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.card {
+  width:66%;
+  max-width: 300px;
+  height: 330px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 15px 20px;
+}
+.spot {
+  width: 100%;
+  height: 300px;
+  box-sizing: border-box;
+  border:1px solid #222;
+  margin-bottom: 15px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 4px 4px 10px #111;
+}
+.spot:hover {
+  box-shadow: 5px 5px 20px #111;
+}
+.gallery {
+  background-image: url(./images/sign.jpg);
+}
+.image {
+  background-image: url(./images/profile.jpg);
+}
+.subtitle {
+  font-family: 'Unica One', cursive;
+  color: white;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.footer {
+  background-color: white;
+  height: 30px;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+.footer a {
+  color: #222;
+  font-family: 'Unica One', cursive;
+  text-decoration: none;
+}
+.media .neon-name {
+  font-size: 16px;
+}
+@media (min-width:680px) {
+  .name {
+    position: absolute;
+    left: 180px;
+  }
+  #quote-1, #quote-2 {
+    width: 600px;
+    height: 150px;
+    padding:5px;
+  }
+  .quote-section {
+    height: 150px;
+  }
+}
+.types {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.types > .neon-name {
+  justify-items: flex-start;
+}
+@media (min-width: 800px) {
+  .social {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+    font-size: 16px;
+    margin-top: 0;
+    margin-left: 0px;
+    padding: 10px 8px 10px 12px;
+    width: auto;
+    position: absolute;
+    top: 270px;
+  }
+  .text {
+    position: absolute;
+    left: 250px;
+  }
+ #neon2 {
+    text-shadow: none;
+    animation-name: none;
+    margin-left: 100px;
+  }
+}
+@media (min-width: 992px) {
+  .text {
+    max-width: 600px;
+    position: absolute;
+    left: 300px;
+  }
+  .greeting {
+    font-size:22px;
+  }
+  .intro {
+    font-size: 15px;
+  }
+  .social {
+    font-size: 18px;
+    background-color: #111;
+  }
+}
+@media (min-width: 1150px) {
+  .text {
+    left: 360px;
+  }
+  .social {
+    position: fixed;
+    font-size: 20px;
+  }
+}
