@@ -7,11 +7,6 @@ body {
   width:100%;
   height: 650px;
   box-sizing: border-box;
-  /* background-image: url(./images/tree-light.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; */
-  /* position: relative; */
 }
 
   /* HEADER BEGIN */
@@ -19,14 +14,11 @@ header {
   background-color: #222;
   height: 90px;
   width: 100%;
-  /* background-image: url(./images/brick.jpg); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: -570px;
 }
 .menu {
-  /* width: 85px;
-  height: 40px; */
   margin-right: 30px;
   background-color: #222;
   color: white;
@@ -45,7 +37,6 @@ header {
   text-transform: uppercase;
 }
 .wrapper {
-  /* background-color: #222; */
   height: 90px;
   width: 100%;
   display: flex;
@@ -105,26 +96,17 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   box-sizing: border-box;
-  /* position:absolute; */
 } 
 
 /* background fade */
-
-
-
 .content {
   margin-top:0px;
   position: absolute;
   width: 100%;
   height: 600px;
-  /* background-color: #222; */
-  /* opacity: .4; */
   box-sizing: border-box;
 }
-
-
 /* list items */
-
 .contact {
   width: 100%;
   height: 25%;
@@ -138,7 +120,6 @@ header {
   align-items: center;
   border-bottom: 2px solid #111;
 }
-
 i {
   transition-property: font-size, color, text-shadow;
   transition-duration: 1.5s, 1.5s, .3s;
@@ -163,12 +144,10 @@ h2 {
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
   animation-timing-function: ease;
-
   transition-property: height,width,font-size,color,text-shadow;
   transition-duration: .8s;
   transition-delay:.25s;
 }
-
 li.address:hover > i {
   font-size: 110px;
   color: #c597f7;
@@ -184,26 +163,19 @@ li.address:hover > i {
 /* li.address:hover ~ li.phone,li.email,li.git{ 
   height:.8em;
   font-size: 55px;
-
- }
- {clear} */
+*/
 li.address:hover h2 {
   font-size: 18px;
   margin: 5px;
-  
 }
-
  li.address:hover {
   height: 200px;
   display: flex;
   flex-direction: column;
   position: relative;
-  
 }
-
-
 .phone {
-  /* color: #f8ce98; */
+  color: #f8ce98;
   font-size: 60px;
   box-sizing:border-box;
   animation-name: phone;
@@ -217,8 +189,6 @@ li.address:hover h2 {
   transition-duration: .8s;
   transition-delay:.20s;
 }
-
-
 li.phone:hover > i {
   font-size: 110px;
   color: #f0bb80;
@@ -234,20 +204,16 @@ li.phone:hover > i {
 /* li.phone:hover ~ li.address,li.email,li.git { 
   height:80px;
   font-size: 55px;
-
  } */
 li.phone:hover h2 {
   font-size: 18px;
-  margin: 5px;
-  
+  margin: 5px; 
 }
-
  li.phone:hover {
   height: 200px;
   display: flex;
   flex-direction: column; 
 }
-
 .email {
   /* color: #ccd0fa; */
   font-size: 60px;
@@ -262,8 +228,6 @@ li.phone:hover h2 {
   transition-duration: .8s;
   transition-delay:.20s;
 }
-
-
 li.email:hover > i {
   font-size: 110px;
   color: #d3d2ff;
@@ -276,7 +240,6 @@ li.email:hover > i {
   .1vw 0vw   5vw #101664, .2vw 0vw  20vw #101664, .4vw 0vw  10vw #101664,
   .1vw 0vw  10vw #101664, .2vw 0vw  30vw #101664, .4vw 0vw  10vw #101664;
 }
-
   /* li.email:hover ~ li.address,li.phone,li.git { 
     height:80px;
     font-size: 55px;
@@ -290,7 +253,6 @@ li.email:hover > i {
     display: flex;
     flex-direction: column; 
   }
-  
 .git {
   font-size: 60px;
   margin-bottom: 0;
@@ -300,13 +262,10 @@ li.email:hover > i {
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
   animation-timing-function: ease;
-
   transition-property: height,width,font-size,color,text-shadow;
   transition-duration: .8s;
   transition-delay:.2s;
 }
-
-
 li.git:hover > i {
   color: #aef3bd;
   text-shadow: 
@@ -331,7 +290,6 @@ li.git:hover {
   display: flex;
   flex-direction: column; 
 }
-
 @keyframes address {
   0%     {color:white; font-size: 60px; text-shadow: none;}
   100% {color: #d9b5ff; font-size:90px; text-shadow: 0px 1px 5px black;}
@@ -348,7 +306,6 @@ li.git:hover {
   0%     {color:white; font-size: 60px; text-shadow: none;}
   100% {color: #cffdd7; font-size:90px; text-shadow: 0px 1px 5px black}
 }
-
   /* Extra Small and up (Portrait Phones) */
 
 /* Small and up (Landscape Phones) */
@@ -399,10 +356,7 @@ li.git:hover {
    li.git:hover {
     height: 210px;
    }
-
 }
-
-/* Medium and up (Tablets) */
 @media (min-width: 700px) {
   .main {
     flex-direction: row;
@@ -414,8 +368,6 @@ li.git:hover {
     display: flex;
     flex-direction: row;
     padding: 5px;
-    /* grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr; */
   }
   .contact {
     height: 100%;
@@ -428,11 +380,9 @@ li.git:hover {
   .address, .phone, .email {
     border-right: 5px solid #111;
   }
-
 li.contact:hover > i {
   font-size: 100px;
 }
-
 li.address:hover h2 {
   font-size: 20px;
   margin: 5px;
@@ -470,7 +420,6 @@ li.address:hover {
   height: 100%;
   width: 40%;
  }
-
  @keyframes address {
   0%     {color:white; font-size: 60px; text-shadow: none;}
   100% {color: #d9b5ff; font-size:90px; text-shadow: 0px 1px 5px black;}
@@ -486,15 +435,12 @@ li.address:hover {
 @keyframes git {
   0%     {color:white; font-size: 60px; text-shadow: none;}
   100% {color: #cffdd7; font-size:90px; text-shadow: 0px 1px 5px black}
+  }
 }
-
-}
-/* Large and up (Desktops) */
 @media (min-width: 992px) {
   li.contact:hover > i {
     font-size: 150px;
   }
-  
   li.address:hover h2 {
     font-size: 25px;
     margin: 5px;
@@ -515,7 +461,6 @@ li.address:hover {
     margin: 5px;
     margin-top: 40px;
   }
-  
   li.address:hover {
     height: 100%;
     width: 40%;
@@ -532,8 +477,6 @@ li.address:hover {
     height: 100%;
     width: 40%;
    }
-
-
   @keyframes address {
     0%     {color:white; font-size: 90px; text-shadow: none;}
     100% {color: #d9b5ff; font-size:120px; text-shadow: 0px 1px 5px black;}
@@ -550,9 +493,4 @@ li.address:hover {
     0%     {color:white; font-size: 90px; text-shadow: none;}
     100% {color: #cffdd7; font-size:120px; text-shadow: 0px 1px 5px black}
   }
-}
-
-/* Extra Large and up (Wide Screen Desktops) */
-@media (min-width: 1200px) {
-
 }
