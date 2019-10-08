@@ -11,7 +11,7 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; */
-  position: relative;
+  /* position: relative; */
 }
 
   /* HEADER BEGIN */
@@ -86,45 +86,40 @@ header {
 /* MAIN CONTENT */
 
 /* background image */
+
+.cover {
+  background-color: #222;
+ opacity: .75;
+ width: 100%;
+ height: 680px;
+ position: absolute;
+ overflow: hidden;
+ margin-top: 90px;
+ box-sizing: border-box;
+}
 .main {
   width:100%;
-  height: 550px;
+  height: 850px;
   background-image: url(./images/tree-light.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   box-sizing: border-box;
-  /* position: relative; */
-  /* position: relative; */
+  /* position:absolute; */
 } 
 
 /* background fade */
-.cover {
-   background-color: #222;
-  opacity: .75;
-  width: 100%;
-  height: 550px;
-  position: absolute;
-  overflow: hidden;
-  margin-top: 90px;
-  box-sizing: border-box;
-}
+
 
 
 .content {
-  margin-top:10px;
+  margin-top:0px;
   position: absolute;
   width: 100%;
-  height: 530px;
+  height: 600px;
   /* background-color: #222; */
   /* opacity: .4; */
   box-sizing: border-box;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(4,1fr);
-  /* justify-content: center;
-  width: 100%;
-  height:100%; */
 }
 
 
@@ -132,51 +127,23 @@ header {
 
 .contact {
   width: 100%;
+  height: 25%;
+  margin: 0 0 0 0;
   display: flex;
   flex-direction: column;
   color: white;
-  padding: 15px 0 2px 0;
+  padding: 15px 0 5px 0;
   box-sizing: border-box;
   justify-content: center;
   align-items: center;
+  border-bottom: 2px solid #111;
 }
 
-.contact .brk {
-  width: 100%;
-  border-top: 2.5px solid rgb(30, 27, 31);
-  box-shadow: 0px .2px 3px rgba(265, 265, 265, 0.6);
-  display: flex;
-  align-self: flex-end;
-  justify-self:flex-end;
-  margin: 2px 0 0 0;
-}
-/* .address-icon {
-  font-size: inherit;
-  color:inherit;
-  text-shadow: inherit;
-} */
-.address {
-  grid-row: 1/2;
-  height:130px;
-  width: 100%;
-  margin: 0 0 0 0;
-  font-size: 60px;
-  box-sizing:border-box;
-  animation-name: address;
-  animation-duration: 3s;
-  animation-delay: 1.5s;
-  animation-fill-mode: forwards;
-  animation-iteration-count: 1;
-  animation-timing-function: ease;
-
-  transition-property: height,font-size,color,text-shadow;
-  transition-duration: 1s;
-  transition-delay:.25s;
-}
 i {
   transition-property: font-size, color, text-shadow;
   transition-duration: 1.5s, 1.5s, .3s;
   transition-delay: 0s, 0s, 1.2s;
+  margin-bottom: 15px;
 }
 h2 {
   font-family: 'Unica One', cursive;
@@ -188,10 +155,18 @@ h2 {
   transition-duration: .20s, .20s;
   transition-delay: .5s, 0s;
 }
+.address {
+  font-size: 60px;
+  animation-name: address;
+  animation-duration: 1.2s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
 
-@keyframes address {
-  0%     {color:white; font-size: 60px; text-shadow: none;}
-  100% {color: #d9b5ff; font-size:90px; text-shadow: 0px 1px 5px black;}
+  transition-property: height,width,font-size,color,text-shadow;
+  transition-duration: .8s;
+  transition-delay:.25s;
 }
 
 li.address:hover > i {
@@ -206,13 +181,14 @@ li.address:hover > i {
   .1vw 0vw   5vw #411b69, .2vw 0vw  20vw #411b69, .4vw 0vw  10vw #411b69,
   .1vw 0vw  10vw #411b69, .2vw 0vw  30vw #411b69, .4vw 0vw  10vw #411b69;
 }
-li.address:hover ~ li.phone,li.email,li.git { 
-  height:80px;
+/* li.address:hover ~ li.phone,li.email,li.git{ 
+  height:.8em;
   font-size: 55px;
 
  }
+ {clear} */
 li.address:hover h2 {
-  font-size: 16px;
+  font-size: 18px;
   margin: 5px;
   
 }
@@ -221,35 +197,28 @@ li.address:hover h2 {
   height: 200px;
   display: flex;
   flex-direction: column;
+  position: relative;
   
 }
 
 
 .phone {
-  grid-row: 2/3;
   /* color: #f8ce98; */
-  margin: 0 0 0 0;
-  height: 130px;
-  width: 100%;
-  color: white;
   font-size: 60px;
   box-sizing:border-box;
   animation-name: phone;
-  animation-duration: 3s;
-  animation-delay: 1.5s;
+  animation-duration:1.2s;
+  animation-delay: 0s;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
   animation-timing-function: ease;
 
-  transition-property: height,font-size,color,text-shadow;
-  transition-duration: 1s;
-  transition-delay:.25s;
+  transition-property: height,width,font-size,color,text-shadow;
+  transition-duration: .8s;
+  transition-delay:.20s;
 }
 
-@keyframes phone {
-  0%     {color:white; font-size: 60px; text-shadow: none;}
-  100% {color: #f8ce98; font-size:90px; text-shadow: 0px 1px 5px black}
-}
+
 li.phone:hover > i {
   font-size: 110px;
   color: #f0bb80;
@@ -262,11 +231,11 @@ li.phone:hover > i {
   .1vw 0vw   5vw #af5602, .2vw 0vw  20vw #af5602, .4vw 0vw  10vw #af5602,
   .1vw 0vw  10vw #af5602, .2vw 0vw  30vw #af5602, .4vw 0vw  10vw #af5602;
 }
-li.phone:hover ~ li.address,li.email,li.git { 
+/* li.phone:hover ~ li.address,li.email,li.git { 
   height:80px;
   font-size: 55px;
 
- }
+ } */
 li.phone:hover h2 {
   font-size: 18px;
   margin: 5px;
@@ -280,29 +249,21 @@ li.phone:hover h2 {
 }
 
 .email {
-  grid-row: 3/4;
-  margin: 0 0 0 0;
   /* color: #ccd0fa; */
-  height: 130px;
-  color: white;
   font-size: 60px;
-  box-sizing: border-box;
   animation-name: email;
-  animation-duration: 3s;
-  animation-delay: 1.5s;
+  animation-duration: 1.2s;
+  animation-delay: 0s;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
   animation-timing-function: ease;
 
-  transition-property: height,font-size,color,text-shadow;
-  transition-duration: 1s;
-  transition-delay:.25s;
+  transition-property: height,width,font-size,color,text-shadow;
+  transition-duration: .8s;
+  transition-delay:.20s;
 }
 
-@keyframes email {
-  0%     {color:white; font-size: 60px; text-shadow: none;}
-  100% {color: #ccd0fa; font-size:90px; text-shadow: 0px 1px 5px black}
-}
+
 li.email:hover > i {
   font-size: 110px;
   color: #d3d2ff;
@@ -316,10 +277,10 @@ li.email:hover > i {
   .1vw 0vw  10vw #101664, .2vw 0vw  30vw #101664, .4vw 0vw  10vw #101664;
 }
 
-  li.email:hover ~ li.address,li.phone,li.git { 
+  /* li.email:hover ~ li.address,li.phone,li.git { 
     height:80px;
     font-size: 55px;
-   }
+   } */
   li.email:hover h2 {
     font-size: 18px;
     margin: 5px; 
@@ -331,28 +292,21 @@ li.email:hover > i {
   }
   
 .git {
-  grid-row: 4/5;
-  margin: 0 0 0 0;
-  height: 130px;
-  color: white;
   font-size: 60px;
-  box-sizing: border-box;
+  margin-bottom: 0;
   animation-name: git;
-  animation-duration: 3s;
-  animation-delay: 1.5s;
+  animation-duration: 1.2s;
+  animation-delay: 0s;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
   animation-timing-function: ease;
 
-  transition-property: height,font-size,color,text-shadow;
-  transition-duration: 1s;
-  transition-delay:.25s;
+  transition-property: height,width,font-size,color,text-shadow;
+  transition-duration: .8s;
+  transition-delay:.2s;
 }
 
-@keyframes git {
-  0%     {color:white; font-size: 60px; text-shadow: none;}
-  100% {color: #cffdd7; font-size:90px; text-shadow: 0px 1px 5px black}
-}
+
 li.git:hover > i {
   color: #aef3bd;
   text-shadow: 
@@ -364,10 +318,10 @@ li.git:hover > i {
   .1vw 0vw   5vw #26740f, .2vw 0vw  20vw #26740f, .4vw 0vw  10vw #26740f,
   .1vw 0vw  10vw #26740f, .2vw 0vw  30vw #26740f, .4vw 0vw  10vw #26740f; 
 }
-li.git:hover ~ li.address,li.phone,li.email { 
+/* li.git:hover ~ li.address,li.phone,li.email { 
   height:80px;
   font-size: 55px;
- }
+ } */
 li.git:hover h2 {
   font-size: 18px;
   margin: 5px; 
@@ -378,16 +332,227 @@ li.git:hover {
   flex-direction: column; 
 }
 
+@keyframes address {
+  0%     {color:white; font-size: 60px; text-shadow: none;}
+  100% {color: #d9b5ff; font-size:90px; text-shadow: 0px 1px 5px black;}
+}
+@keyframes phone {
+  0%     {color:white; font-size: 60px; text-shadow: none;}
+  100% {color: #f8ce98; font-size:90px; text-shadow: 0px 1px 5px black}
+}
+@keyframes email {
+  0%     {color:white; font-size: 60px; text-shadow: none;}
+  100% {color: #ccd0fa; font-size:90px; text-shadow: 0px 1px 5px black}
+}
+@keyframes git {
+  0%     {color:white; font-size: 60px; text-shadow: none;}
+  100% {color: #cffdd7; font-size:90px; text-shadow: 0px 1px 5px black}
+}
+
+  /* Extra Small and up (Portrait Phones) */
+
+/* Small and up (Landscape Phones) */
+@media (min-width: 576px) {
+  .contact {
+    width: 100%;
+    height: 180px;
+  }
+  .cover, .content {
+    height: 750;
+  }
+  .main {
+    height: 900px;
+  }
+  .address, .phone, .email, .git {
+    font-size: 1.3em;
+  }
+  li.contact:hover > i {
+    font-size: 130px;
+  }
+
+  li.address:hover h2 {
+    font-size: 18px;
+    margin: 5px;
+  }
+  li.phone:hover h2 {
+    font-size: 20px;
+    margin: 5px;
+  }
+  li.email:hover h2 {
+    font-size: 20px;
+    margin: 5px;
+  }
+  li.git:hover h2 {
+    font-size: 20px;
+    margin: 5px;
+  }
+  
+   li.address:hover {
+    height: 210px;
+   }
+   li.phone:hover {
+    height: 210px;
+   }
+   li.email:hover {
+    height: 210px;
+   }
+   li.git:hover {
+    height: 210px;
+   }
+
+}
+
+/* Medium and up (Tablets) */
+@media (min-width: 700px) {
+  .main {
+    flex-direction: row;
+    width:100%;
+  }
+  .cover, .content {
+    width:100%;
+    height:100%;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    /* grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr; */
+  }
+  .contact {
+    height: 100%;
+    width: 25%;
+    justify-content: center;
+    align-items: space-between;
+    padding-bottom: 50px;
+    border-bottom: none;
+  }
+  .address, .phone, .email {
+    border-right: 5px solid #111;
+  }
+
+li.contact:hover > i {
+  font-size: 100px;
+}
+
+li.address:hover h2 {
+  font-size: 20px;
+  margin: 5px;
+  margin-top: 40px;
+}
+li.phone:hover h2 {
+  font-size: 20px;
+  margin: 5px;
+  margin-top: 40px;
+}
+li.email:hover h2 {
+  font-size: 20px;
+  margin: 5px;
+  margin-top: 40px;
+}
+li.git:hover h2 {
+  font-size: 20px;
+  margin: 5px;
+  margin-top: 40px;
+}
+
+li.address:hover {
+  height: 100%;
+  width: 40%;
+ }
+ li.phone:hover {
+  height: 100%;
+  width: 40%;
+ }
+ li.email:hover {
+  height: 100%;
+  width: 40%;
+ }
+ li.git:hover {
+  height: 100%;
+  width: 40%;
+ }
+
+ @keyframes address {
+  0%     {color:white; font-size: 60px; text-shadow: none;}
+  100% {color: #d9b5ff; font-size:90px; text-shadow: 0px 1px 5px black;}
+}
+@keyframes phone {
+  0%     {color:white; font-size: 60px; text-shadow: none;}
+  100% {color: #f8ce98; font-size:90px; text-shadow: 0px 1px 5px black}
+}
+@keyframes email {
+  0%     {color:white; font-size: 60px; text-shadow: none;}
+  100% {color: #ccd0fa; font-size:90px; text-shadow: 0px 1px 5px black}
+}
+@keyframes git {
+  0%     {color:white; font-size: 60px; text-shadow: none;}
+  100% {color: #cffdd7; font-size:90px; text-shadow: 0px 1px 5px black}
+}
+
+}
+/* Large and up (Desktops) */
+@media (min-width: 992px) {
+  li.contact:hover > i {
+    font-size: 150px;
+  }
+  
+  li.address:hover h2 {
+    font-size: 25px;
+    margin: 5px;
+    margin-top: 40px;
+  }
+  li.phone:hover h2 {
+    font-size: 25px;
+    margin: 5px;
+    margin-top: 40px;
+  }
+  li.email:hover h2 {
+    font-size: 25px;
+    margin: 5px;
+    margin-top: 40px;
+  }
+  li.git:hover h2 {
+    font-size: 25px;
+    margin: 5px;
+    margin-top: 40px;
+  }
+  
+  li.address:hover {
+    height: 100%;
+    width: 40%;
+   }
+   li.phone:hover {
+    height: 100%;
+    width: 40%;
+   }
+   li.email:hover {
+    height: 100%;
+    width: 40%;
+   }
+   li.git:hover {
+    height: 100%;
+    width: 40%;
+   }
 
 
+  @keyframes address {
+    0%     {color:white; font-size: 90px; text-shadow: none;}
+    100% {color: #d9b5ff; font-size:120px; text-shadow: 0px 1px 5px black;}
+  }
+  @keyframes phone {
+    0%     {color:white; font-size: 90px; text-shadow: none;}
+    100% {color: #f8ce98; font-size:120px; text-shadow: 0px 1px 5px black}
+  }
+  @keyframes email {
+    0%     {color:white; font-size: 90px; text-shadow: none;}
+    100% {color: #ccd0fa; font-size:120px; text-shadow: 0px 1px 5px black}
+  }
+  @keyframes git {
+    0%     {color:white; font-size: 90px; text-shadow: none;}
+    100% {color: #cffdd7; font-size:120px; text-shadow: 0px 1px 5px black}
+  }
+}
 
+/* Extra Large and up (Wide Screen Desktops) */
+@media (min-width: 1200px) {
 
-/* color: #fda3a0;
-  text-shadow: 
-  .1vw 0vw .25vw #f8acac, .2vw 0vw .25vw #f8acac, .4vw 0vw .25vw #f8acac, 
-  .1vw 0vw   0vw #db2d27, .2vw 0vw   0vw #db2d27, .4vw 0vw   0vw #db2d27,
-  .1vw 0vw  .1vw #db2d27, .2vw 0vw  .1vw #db2d27, .4vw 0vw  .1vw #db2d27,
-  .1vw 0vw   2vw #db2d27, .2vw 0vw   2vw #db2d27, .4vw 0vw   2vw #db2d27, 
-  .1vw 0vw   1vw #640a03, .2vw 0vw   1vw #640a03, .4vw 0vw   5vw #640a03, 
-  .1vw 0vw   5vw #640a03, .2vw 0vw  20vw #640a03, .4vw 0vw  10vw #640a03,
-  .1vw 0vw  10vw #640a03, .2vw 0vw  30vw #640a03, .4vw 0vw  10vw #640a03; */
+}
