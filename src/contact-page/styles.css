@@ -1,0 +1,496 @@
+body {
+  margin:0;
+  padding:0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:100%;
+  height: 650px;
+  box-sizing: border-box;
+}
+
+  /* HEADER BEGIN */
+header {
+  background-color: #222;
+  height: 90px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: -570px;
+}
+.menu {
+  margin-right: 30px;
+  background-color: #222;
+  color: white;
+  border: 2px solid white;
+  border-radius: 2px;
+  font-family:'Unica One', cursive;
+  font-size: 15px;
+  padding: 5px;
+}
+.name {
+  font-family:'Unica One', cursive;
+  color: white;
+  font-size: 35px;
+  margin-right: 40px;
+  letter-spacing: .3rem;
+  text-transform: uppercase;
+}
+.wrapper {
+  height: 90px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(
+                     rgba(20,20,20, .5), 
+                     rgba(20,20,20, .5));
+}
+.neon-wrapper {
+  box-shadow:
+  0 0 0.1vw  0.4vw #ffc6fc,   
+  0 0 0.4vw  0.6vw #c84bd8, 
+  0 0   4vw  0.4vw #750b79,
+  inset 0 0 1.5vw  0.4vw #750b79,
+  inset 0 0 0.4vw  0.2vw #c84bd8,
+  inset 0 0 0.5vw  0.2vw #ffc6fc;
+  border-radius: .6rem;
+  padding: 8px;
+  margin-left: 25px;
+}
+.neon-text {
+  font-family:'Unica One', cursive;
+  font-size: 2.2rem;
+  letter-spacing: 5px;
+  color: #f9b7fc;
+  margin: 0;
+  text-shadow: 
+  .1vw 0vw .25vw #ffc6fc, .2vw 0vw .25vw #ffc6fc, .4vw 0vw .25vw #ffc6fc, 
+  .1vw 0vw   0vw #c84bd8, .2vw 0vw   0vw #c84bd8, .4vw 0vw   0vw #c84bd8,
+  .1vw 0vw  .1vw #c84bd8, .2vw 0vw  .1vw #c84bd8, .4vw 0vw  .1vw #c84bd8,
+  .1vw 0vw   2vw #c84bd8, .2vw 0vw   2vw #c84bd8, .4vw 0vw   2vw #c84bd8, 
+  .1vw 0vw   1vw #750b79, .2vw 0vw   1vw #750b79, .4vw 0vw   5vw #750b79, 
+  .1vw 0vw   5vw #750b79, .2vw 0vw  20vw #750b79, .4vw 0vw  10vw #750b79,
+  .1vw 0vw  10vw #750b79, .2vw 0vw  30vw #750b79, .4vw 0vw  10vw #750b79;
+}
+/* END HEADER */
+/* MAIN CONTENT */
+
+/* background image */
+
+.cover {
+  background-color: #222;
+ opacity: .75;
+ width: 100%;
+ height: 680px;
+ position: absolute;
+ overflow: hidden;
+ margin-top: 90px;
+ box-sizing: border-box;
+}
+.main {
+  width:100%;
+  height: 850px;
+  background-image: url(./images/tree-light.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+} 
+
+/* background fade */
+.content {
+  margin-top:0px;
+  position: absolute;
+  width: 100%;
+  height: 600px;
+  box-sizing: border-box;
+}
+/* list items */
+.contact {
+  width: 100%;
+  height: 25%;
+  margin: 0 0 0 0;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 15px 0 5px 0;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid #111;
+}
+i {
+  transition-property: font-size, color, text-shadow;
+  transition-duration: 1.5s, 1.5s, .3s;
+  transition-delay: 0s, 0s, 1.2s;
+  margin-bottom: 15px;
+}
+h2 {
+  font-family: 'Unica One', cursive;
+  font-size: 0px;
+  color: white;
+  margin: 0;
+
+  transition-property: font-size, margin;
+  transition-duration: .20s, .20s;
+  transition-delay: .5s, 0s;
+}
+.address {
+  font-size: 60px;
+  animation-name: address;
+  animation-duration: 1.2s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  transition-property: height,width,font-size,color,text-shadow;
+  transition-duration: .8s;
+  transition-delay:.25s;
+}
+li.address:hover > i {
+  font-size: 110px;
+  color: #c597f7;
+  text-shadow: 
+  .1vw 0vw .25vw #d9b5ff, .2vw 0vw .25vw #d9b5ff, .4vw 0vw .25vw #d9b5ff, 
+  .1vw 0vw   0vw #7e2cd6, .2vw 0vw   0vw #7e2cd6, .4vw 0vw   0vw #7e2cd6,
+  .1vw 0vw  .1vw #7e2cd6, .2vw 0vw  .1vw #7e2cd6, .4vw 0vw  .1vw #7e2cd6,
+  .1vw 0vw   2vw #7e2cd6, .2vw 0vw   2vw #7e2cd6, .4vw 0vw   2vw #7e2cd6, 
+  .1vw 0vw   1vw #411b69, .2vw 0vw   1vw #411b69, .4vw 0vw   5vw #411b69, 
+  .1vw 0vw   5vw #411b69, .2vw 0vw  20vw #411b69, .4vw 0vw  10vw #411b69,
+  .1vw 0vw  10vw #411b69, .2vw 0vw  30vw #411b69, .4vw 0vw  10vw #411b69;
+}
+/* li.address:hover ~ li.phone,li.email,li.git{ 
+  height:.8em;
+  font-size: 55px;
+*/
+li.address:hover h2 {
+  font-size: 18px;
+  margin: 5px;
+}
+ li.address:hover {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.phone {
+  color: #f8ce98;
+  font-size: 60px;
+  box-sizing:border-box;
+  animation-name: phone;
+  animation-duration:1.2s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+
+  transition-property: height,width,font-size,color,text-shadow;
+  transition-duration: .8s;
+  transition-delay:.20s;
+}
+li.phone:hover > i {
+  font-size: 110px;
+  color: #f0bb80;
+  text-shadow: 
+  .1vw 0vw .25vw #f8ce98, .2vw 0vw .25vw #f8ce98, .4vw 0vw .25vw #f8ce98, 
+  .1vw 0vw   0vw #d17b19, .2vw 0vw   0vw #d17b19, .4vw 0vw   0vw #d17b19,
+  .1vw 0vw  .1vw #d17b19, .2vw 0vw  .1vw #e99619, .4vw 0vw  .1vw #d17b19,
+  .1vw 0vw   2vw #d17b19, .2vw 0vw   2vw #d17b19, .4vw 0vw   2vw #d17b19, 
+  .1vw 0vw   1vw #af5602, .2vw 0vw   1vw #af5602, .4vw 0vw   5vw #af5602, 
+  .1vw 0vw   5vw #af5602, .2vw 0vw  20vw #af5602, .4vw 0vw  10vw #af5602,
+  .1vw 0vw  10vw #af5602, .2vw 0vw  30vw #af5602, .4vw 0vw  10vw #af5602;
+}
+/* li.phone:hover ~ li.address,li.email,li.git { 
+  height:80px;
+  font-size: 55px;
+ } */
+li.phone:hover h2 {
+  font-size: 18px;
+  margin: 5px; 
+}
+ li.phone:hover {
+  height: 200px;
+  display: flex;
+  flex-direction: column; 
+}
+.email {
+  /* color: #ccd0fa; */
+  font-size: 60px;
+  animation-name: email;
+  animation-duration: 1.2s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+
+  transition-property: height,width,font-size,color,text-shadow;
+  transition-duration: .8s;
+  transition-delay:.20s;
+}
+li.email:hover > i {
+  font-size: 110px;
+  color: #d3d2ff;
+  text-shadow: 
+  .1vw 0vw .25vw #ccd0fa, .2vw 0vw .25vw #ccd0fa, .4vw 0vw .25vw #ccd0fa, 
+  .1vw 0vw   0vw #2d2bc5, .2vw 0vw   0vw #2d2bc5, .4vw 0vw   0vw #2d2bc5,
+  .1vw 0vw  .1vw #2d2bc5, .2vw 0vw  .1vw #2d2bc5, .4vw 0vw  .1vw #2a27e2,
+  .1vw 0vw   2vw #2d2bc5, .2vw 0vw   2vw #2d2bc5, .4vw 0vw   2vw #2d2bc5, 
+  .1vw 0vw   1vw #101664, .2vw 0vw   1vw #101664, .4vw 0vw   5vw #101664, 
+  .1vw 0vw   5vw #101664, .2vw 0vw  20vw #101664, .4vw 0vw  10vw #101664,
+  .1vw 0vw  10vw #101664, .2vw 0vw  30vw #101664, .4vw 0vw  10vw #101664;
+}
+  /* li.email:hover ~ li.address,li.phone,li.git { 
+    height:80px;
+    font-size: 55px;
+   } */
+  li.email:hover h2 {
+    font-size: 18px;
+    margin: 5px; 
+  }
+  li.email:hover {
+    height: 200px;
+    display: flex;
+    flex-direction: column; 
+  }
+.git {
+  font-size: 60px;
+  margin-bottom: 0;
+  animation-name: git;
+  animation-duration: 1.2s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  transition-property: height,width,font-size,color,text-shadow;
+  transition-duration: .8s;
+  transition-delay:.2s;
+}
+li.git:hover > i {
+  color: #aef3bd;
+  text-shadow: 
+  .1vw 0vw .25vw #cffdd7, .2vw 0vw .25vw #cffdd7, .4vw 0vw .25vw #cffdd7, 
+  .1vw 0vw   0vw #63d436, .2vw 0vw   0vw #63d436, .4vw 0vw   0vw #63d436,
+  .1vw 0vw  .1vw #63d436, .2vw 0vw  .1vw #63d436, .4vw 0vw  .1vw #63d436,
+  .1vw 0vw   2vw #63d436, .2vw 0vw   2vw #63d436, .4vw 0vw   2vw #63d436, 
+  .1vw 0vw   1vw #26740f, .2vw 0vw   1vw #26740f, .4vw 0vw   5vw #26740f, 
+  .1vw 0vw   5vw #26740f, .2vw 0vw  20vw #26740f, .4vw 0vw  10vw #26740f,
+  .1vw 0vw  10vw #26740f, .2vw 0vw  30vw #26740f, .4vw 0vw  10vw #26740f; 
+}
+/* li.git:hover ~ li.address,li.phone,li.email { 
+  height:80px;
+  font-size: 55px;
+ } */
+li.git:hover h2 {
+  font-size: 18px;
+  margin: 5px; 
+}
+li.git:hover {
+  height: 200px;
+  display: flex;
+  flex-direction: column; 
+}
+@keyframes address {
+  0%     {color:white; font-size: 60px; text-shadow: none;}
+  100% {color: #d9b5ff; font-size:90px; text-shadow: 0px 1px 5px black;}
+}
+@keyframes phone {
+  0%     {color:white; font-size: 60px; text-shadow: none;}
+  100% {color: #f8ce98; font-size:90px; text-shadow: 0px 1px 5px black}
+}
+@keyframes email {
+  0%     {color:white; font-size: 60px; text-shadow: none;}
+  100% {color: #ccd0fa; font-size:90px; text-shadow: 0px 1px 5px black}
+}
+@keyframes git {
+  0%     {color:white; font-size: 60px; text-shadow: none;}
+  100% {color: #cffdd7; font-size:90px; text-shadow: 0px 1px 5px black}
+}
+  /* Extra Small and up (Portrait Phones) */
+
+/* Small and up (Landscape Phones) */
+@media (min-width: 576px) {
+  .contact {
+    width: 100%;
+    height: 180px;
+  }
+  .cover, .content {
+    height: 750;
+  }
+  .main {
+    height: 900px;
+  }
+  .address, .phone, .email, .git {
+    font-size: 1.3em;
+  }
+  li.contact:hover > i {
+    font-size: 130px;
+  }
+
+  li.address:hover h2 {
+    font-size: 18px;
+    margin: 5px;
+  }
+  li.phone:hover h2 {
+    font-size: 20px;
+    margin: 5px;
+  }
+  li.email:hover h2 {
+    font-size: 20px;
+    margin: 5px;
+  }
+  li.git:hover h2 {
+    font-size: 20px;
+    margin: 5px;
+  }
+  
+   li.address:hover {
+    height: 210px;
+   }
+   li.phone:hover {
+    height: 210px;
+   }
+   li.email:hover {
+    height: 210px;
+   }
+   li.git:hover {
+    height: 210px;
+   }
+}
+@media (min-width: 700px) {
+  .main {
+    flex-direction: row;
+    width:100%;
+  }
+  .cover, .content {
+    width:100%;
+    height:100%;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+  }
+  .contact {
+    height: 100%;
+    width: 25%;
+    justify-content: center;
+    align-items: space-between;
+    padding-bottom: 50px;
+    border-bottom: none;
+  }
+  .address, .phone, .email {
+    border-right: 5px solid #111;
+  }
+li.contact:hover > i {
+  font-size: 100px;
+}
+li.address:hover h2 {
+  font-size: 20px;
+  margin: 5px;
+  margin-top: 40px;
+}
+li.phone:hover h2 {
+  font-size: 20px;
+  margin: 5px;
+  margin-top: 40px;
+}
+li.email:hover h2 {
+  font-size: 20px;
+  margin: 5px;
+  margin-top: 40px;
+}
+li.git:hover h2 {
+  font-size: 20px;
+  margin: 5px;
+  margin-top: 40px;
+}
+
+li.address:hover {
+  height: 100%;
+  width: 40%;
+ }
+ li.phone:hover {
+  height: 100%;
+  width: 40%;
+ }
+ li.email:hover {
+  height: 100%;
+  width: 40%;
+ }
+ li.git:hover {
+  height: 100%;
+  width: 40%;
+ }
+ @keyframes address {
+  0%     {color:white; font-size: 60px; text-shadow: none;}
+  100% {color: #d9b5ff; font-size:90px; text-shadow: 0px 1px 5px black;}
+}
+@keyframes phone {
+  0%     {color:white; font-size: 60px; text-shadow: none;}
+  100% {color: #f8ce98; font-size:90px; text-shadow: 0px 1px 5px black}
+}
+@keyframes email {
+  0%     {color:white; font-size: 60px; text-shadow: none;}
+  100% {color: #ccd0fa; font-size:90px; text-shadow: 0px 1px 5px black}
+}
+@keyframes git {
+  0%     {color:white; font-size: 60px; text-shadow: none;}
+  100% {color: #cffdd7; font-size:90px; text-shadow: 0px 1px 5px black}
+  }
+}
+@media (min-width: 992px) {
+  li.contact:hover > i {
+    font-size: 150px;
+  }
+  li.address:hover h2 {
+    font-size: 25px;
+    margin: 5px;
+    margin-top: 40px;
+  }
+  li.phone:hover h2 {
+    font-size: 25px;
+    margin: 5px;
+    margin-top: 40px;
+  }
+  li.email:hover h2 {
+    font-size: 25px;
+    margin: 5px;
+    margin-top: 40px;
+  }
+  li.git:hover h2 {
+    font-size: 25px;
+    margin: 5px;
+    margin-top: 40px;
+  }
+  li.address:hover {
+    height: 100%;
+    width: 40%;
+   }
+   li.phone:hover {
+    height: 100%;
+    width: 40%;
+   }
+   li.email:hover {
+    height: 100%;
+    width: 40%;
+   }
+   li.git:hover {
+    height: 100%;
+    width: 40%;
+   }
+  @keyframes address {
+    0%     {color:white; font-size: 90px; text-shadow: none;}
+    100% {color: #d9b5ff; font-size:120px; text-shadow: 0px 1px 5px black;}
+  }
+  @keyframes phone {
+    0%     {color:white; font-size: 90px; text-shadow: none;}
+    100% {color: #f8ce98; font-size:120px; text-shadow: 0px 1px 5px black}
+  }
+  @keyframes email {
+    0%     {color:white; font-size: 90px; text-shadow: none;}
+    100% {color: #ccd0fa; font-size:120px; text-shadow: 0px 1px 5px black}
+  }
+  @keyframes git {
+    0%     {color:white; font-size: 90px; text-shadow: none;}
+    100% {color: #cffdd7; font-size:120px; text-shadow: 0px 1px 5px black}
+  }
+}
