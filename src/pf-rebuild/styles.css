@@ -4,6 +4,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #222;
 }
 header {
   background-color: #222;
@@ -15,8 +16,6 @@ header {
   background-position-y: -570px;
 }
 .menu {
-  /* width: 85px;
-  height: 40px; */
   margin-right: 30px;
   background-color: #222;
   color: white;
@@ -35,7 +34,6 @@ header {
   text-transform: uppercase;
 }
 .wrapper {
-  /* background-color: #222; */
   height: 90px;
   width: 100%;
   display: flex;
@@ -44,17 +42,8 @@ header {
   background: linear-gradient(
                      rgba(20,20,20, .5), 
                      rgba(20,20,20, .5));
-  /* padding: 10px 220px; */
-  /* overflow: hidden; */
 }
-/* @font-face {
-  font-family: neon;
-  src: url(../../../../../../gaschdammit/Library/Fonts/hellodenverdisplaybold_v1.6.ttf);
-} */
-/* @font-face {
-  font-family: neon;
-  src: url(../../../../../../gaschdammit/Library/Fonts/hellodenverdisplaybold_v1.6.ttf);
-} */
+
 .neon-wrapper {
   box-shadow:
   0 0 0.1vw  0.4vw #ffc6fc,   
@@ -86,7 +75,6 @@ header {
 .main {
   width:100%;
   height: 400px;
-  background-color: #222;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -95,6 +83,7 @@ header {
 .text {
   box-sizing: border-box;
   width: 85%;
+  max-width: 500px;
   height: 220px;
   background-color: #222;
   padding: 25px 15px;
@@ -136,6 +125,56 @@ header {
   .1vw 0vw   1vw #26740f, .2vw 0vw   1vw #26740f, .4vw 0vw   5vw #26740f, 
   .1vw 0vw   5vw #26740f, .2vw 0vw  20vw #26740f, .4vw 0vw  10vw #26740f,
   .1vw 0vw  10vw #26740f, .2vw 0vw  30vw #26740f, .4vw 0vw  10vw #26740f;
+
+  animation-name: flicker;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+  animation-delay: 15s;
+}
+@keyframes flicker {
+  0%     {text-shadow: 
+    .1vw 0vw .25vw #cffdd7, .2vw 0vw .25vw #cffdd7, .4vw 0vw .25vw #cffdd7, 
+  .1vw 0vw   0vw #63d436, .2vw 0vw   0vw #63d436, .4vw 0vw   0vw #63d436,
+  .1vw 0vw  .1vw #63d436, .2vw 0vw  .1vw #63d436, .4vw 0vw  .1vw #63d436,
+  .1vw 0vw   2vw #63d436, .2vw 0vw   2vw #63d436, .4vw 0vw   2vw #63d436, 
+  .1vw 0vw   1vw #26740f, .2vw 0vw   1vw #26740f, .4vw 0vw   5vw #26740f, 
+  .1vw 0vw   5vw #26740f, .2vw 0vw  20vw #26740f, .4vw 0vw  10vw #26740f,
+  .1vw 0vw  10vw #26740f, .2vw 0vw  30vw #26740f, .4vw 0vw  10vw #26740f;
+  }
+  1%    {text-shadow: none;}
+  2%   {text-shadow: 
+  .1vw 0vw .25vw #cffdd7, .2vw 0vw .25vw #cffdd7, .4vw 0vw .25vw #cffdd7, 
+  .1vw 0vw   0vw #63d436, .2vw 0vw   0vw #63d436, .4vw 0vw   0vw #63d436,
+  .1vw 0vw  .1vw #63d436, .2vw 0vw  .1vw #63d436, .4vw 0vw  .1vw #63d436,
+  .1vw 0vw   2vw #63d436, .2vw 0vw   2vw #63d436, .4vw 0vw   2vw #63d436, 
+  .1vw 0vw   1vw #26740f, .2vw 0vw   1vw #26740f, .4vw 0vw   5vw #26740f, 
+  .1vw 0vw   5vw #26740f, .2vw 0vw  20vw #26740f, .4vw 0vw  10vw #26740f,
+  .1vw 0vw  10vw #26740f, .2vw 0vw  30vw #26740f, .4vw 0vw  10vw #26740f;
+}
+  98%   {text-shadow: 
+  .1vw 0vw .25vw #cffdd7, .2vw 0vw .25vw #cffdd7, .4vw 0vw .25vw #cffdd7, 
+  .1vw 0vw   0vw #63d436, .2vw 0vw   0vw #63d436, .4vw 0vw   0vw #63d436,
+  .1vw 0vw  .1vw #63d436, .2vw 0vw  .1vw #63d436, .4vw 0vw  .1vw #63d436,
+  .1vw 0vw   2vw #63d436, .2vw 0vw   2vw #63d436, .4vw 0vw   2vw #63d436, 
+  .1vw 0vw   1vw #26740f, .2vw 0vw   1vw #26740f, .4vw 0vw   5vw #26740f, 
+  .1vw 0vw   5vw #26740f, .2vw 0vw  20vw #26740f, .4vw 0vw  10vw #26740f,
+  .1vw 0vw  10vw #26740f, .2vw 0vw  30vw #26740f, .4vw 0vw  10vw #26740f;
+}
+  99%   {text-shadow: none;}
+  100%   {text-shadow: 
+  .1vw 0vw .25vw #cffdd7, .2vw 0vw .25vw #cffdd7, .4vw 0vw .25vw #cffdd7, 
+  .1vw 0vw   0vw #63d436, .2vw 0vw   0vw #63d436, .4vw 0vw   0vw #63d436,
+  .1vw 0vw  .1vw #63d436, .2vw 0vw  .1vw #63d436, .4vw 0vw  .1vw #63d436,
+  .1vw 0vw   2vw #63d436, .2vw 0vw   2vw #63d436, .4vw 0vw   2vw #63d436, 
+  .1vw 0vw   1vw #26740f, .2vw 0vw   1vw #26740f, .4vw 0vw   5vw #26740f, 
+  .1vw 0vw   5vw #26740f, .2vw 0vw  20vw #26740f, .4vw 0vw  10vw #26740f,
+  .1vw 0vw  10vw #26740f, .2vw 0vw  30vw #26740f, .4vw 0vw  10vw #26740f;
+}
+}
+.media .neon-name {
+  margin-left: 40px;
+  font-family: 'Catamaran', sans-serif;
+  text-transform: uppercase;
 }
 .social {
   list-style: none;
@@ -147,15 +186,32 @@ header {
   align-self: flex-start;
   margin-left: 20px;
   margin-top: 60px;
+
+  animation-name: social;
+  animation-duration: 3s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
-
-
+@keyframes social {
+  0%  {transform: translateX(-200px)}
+  100% {transform: translateX(15px)}
+}
 .quote-section {
   position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  /* background-color: #222; */
+  width:100%;
 }
 #quote-1 {
   width: 100%;
+  max-width: 600px;
   height: 250px;
+  border: 3px solid #f3daff;
+  border-right: none;
+  box-sizing: border-box;
   /* padding: 20px; */
   background-image: url(./images/good-times.jpg);
   background-position: center;
@@ -167,9 +223,11 @@ header {
 }
 #quote-2 {
   width: 100%;
+  max-width: 600px;
   height: 250px;
-  position: relative;
   box-sizing: border-box;
+  position: relative;
+  /* box-sizing: content-box; */
   top: 0;
   left: 0;
   padding: 25px;
@@ -193,27 +251,22 @@ header {
   background-color: #222;
   width: 100%;
   padding: 20px 0;
-  /* display:flex;
-  flex-direction: column;
-  align-items: center; */
 }
 .types {
   box-sizing: content-box;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
 }
-.types h2 {
-  font-family: 'Catamaran', sans-serif;
-  text-transform: uppercase;
-}
 .card {
   width:66%;
+  max-width: 300px;
   height: 330px;
   position: relative;
   display: flex;
   flex-direction: column;
-  margin: 15px 0;
+  margin: 15px 20px;
 }
 .spot {
   width: 100%;
@@ -221,7 +274,6 @@ header {
   box-sizing: border-box;
   border:1px solid #222;
   margin-bottom: 15px;
-  /* position: absolute; */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -245,9 +297,11 @@ header {
 .footer {
   background-color: white;
   height: 30px;
+  width: 100%;
   box-sizing: border-box;
   display: flex;
   align-items: center;
+  justify-content:center;
 }
 .footer a {
   color: #222;
@@ -256,4 +310,74 @@ header {
 }
 .media .neon-name {
   font-size: 16px;
+}
+@media (min-width:680px) {
+  .name {
+    position: absolute;
+    left: 180px;
+  }
+  #quote-1, #quote-2 {
+    width: 600px;
+    height: 150px;
+    padding:5px;
+  }
+  .quote-section {
+    height: 150px;
+  }
+}
+.types {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.types > .neon-name {
+  justify-items: flex-start;
+}
+@media (min-width: 800px) {
+  .social {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+    font-size: 16px;
+    margin-top: 0;
+    margin-left: 0px;
+    padding: 10px 8px 10px 12px;
+    width: auto;
+    position: absolute;
+    top: 270px;
+  }
+  .text {
+    position: absolute;
+    left: 250px;
+  }
+ #neon2 {
+    text-shadow: none;
+    animation-name: none;
+    margin-left: 100px;
+  }
+}
+@media (min-width: 992px) {
+  .text {
+    max-width: 600px;
+    position: absolute;
+    left: 300px;
+  }
+  .greeting {
+    font-size:22px;
+  }
+  .intro {
+    font-size: 15px;
+  }
+  .social {
+    font-size: 18px;
+    background-color: #111;
+  }
+}
+@media (min-width: 1150px) {
+  .text {
+    left: 360px;
+  }
+  .social {
+    position: fixed;
+    font-size: 20px;
+  }
 }
