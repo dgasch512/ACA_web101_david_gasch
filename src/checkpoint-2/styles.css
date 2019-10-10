@@ -15,52 +15,77 @@
   width: 100%;
   height: auto;
 }
-
 #mainNav {
   background-color: #f9f9ec;
   width: 100%;
   height: auto;
-  padding: 25px;
-  display: inline-block;
-  /* flex-direction: row; */
-
+  padding: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 .hamburger {
   position: absolute;
   top: 60px;
+  left: 40px;
 }
 .hamburger span {
   display: block;
   background-color: #222;
   width: 30px;
   height: 2px;
-  margin-bottom:5px;
-  
+  margin-bottom:5px;  
 }
-
+#logo {
+  width:60%;
+  margin: 10px auto;
+  box-sizing: content-box;
+  padding: 10px;
+}
 .logo {
-  background-image: url(./images/SDMlogo.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
-  height: 90px;
-  width: auto;
+  background-size: 100%;
+  height: auto;
+  width:100%;
 }
-
 .navItems {
   display: none;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+  width: 400px;
+  margin-left:40px;
 }
-.getStarted {
-  display: none;
+.item {
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #222;
+  margin-right: 25px;
 }
-
+.icon { 
+  font-size: 17px;
+  margin-right: 15px;
+}
 .primaryImg {
   background-image: url(./images/hero-min.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   width:100%;
-  height: 410px;
+  height: 400px;
+}
+#hero-main {
+  display:none;
+ width: 100%;
+ max-height: 700px;
+  object-fit: cover;
+  overflow: hidden;
+  /* image-orientation:  */
+  
 }
 .menu-sect {
   width: 100%;
@@ -73,16 +98,15 @@
   align-items: center;
   padding: 15px;
   height: auto;
-  margin: 20px 0 10px 0;
-
-
 }
+
 .menu h2 {
   font-size: 45px;
   font-family: 'Roboto Slab', serif;
+  margin-left: 20px;
 }
 hr {
-  width: 65%;
+  width: 60%;
   /* height: .1px; */
   color: black;
   border: .5px solid black;
@@ -96,18 +120,19 @@ hr {
   font-weight: 300;
   padding: 15px;
   margin-bottom: 20px;
+  margin-left: 20px;
 }
 .menuTypes {
  background-color: transparent;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-between;
-  padding:15px;
- 
+  justify-content: space-evenly;
+  padding:auto;
+  padding-bottom: 40px;
 }
 .type {
-  width: 48%;
+  width: 45%;
   height: auto;
   background-color: #fff;
   padding: 30px;
@@ -116,6 +141,7 @@ hr {
   flex-direction: column;
   align-items: center;
 }
+
 .menuHead h4 {
   font-size: 27px;
   font-family: 'Roboto Slab', serif;
@@ -160,7 +186,6 @@ span.orange {
   color: #333;
   font-size: 13px;
 }
-
 .footer .media {
   color: #333;
   font-size: 13px;
@@ -184,5 +209,50 @@ span.orange {
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
   color: #222;
-  
+}
+@media (min-width: 576px) {
+  /* #mainNav {
+    height: 200px;
+  } */
+  hr {
+    width:75%;
+  }
+  .primaryImg {
+    height: 600px;
+  }
+}
+/* Medium and up (Tablets) */
+@media (min-width: 768px) {
+  #mainNav {
+      position: fixed;
+  }
+  .hamburger {
+    display: none;
+  }
+  #logo {
+    width: 30%;
+    margin: 15px;
+  }
+  .navItems {
+    display: flex;
+  }
+  .primaryImg {
+    display: none;
+  }
+  #hero-main {
+    display: block;
+
+  }
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    box-sizing: content-box;
+  }
+  .sister p {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
 }
