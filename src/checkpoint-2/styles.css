@@ -1,0 +1,188 @@
+
+.pageWrap {
+  background-image: url(./images/bck.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat-y;
+  width: 100%;
+  height:auto;
+}
+.innerWrap {
+  background-color: rgba(236, 106, 0, 0.877);
+  background-size: cover;
+  background-repeat: repeat-y;
+  background-position: center;
+  width: 100%;
+  height: auto;
+}
+
+#mainNav {
+  background-color: #f9f9ec;
+  width: 100%;
+  height: auto;
+  padding: 25px;
+  display: inline-block;
+  /* flex-direction: row; */
+
+}
+.hamburger {
+  position: absolute;
+  top: 60px;
+}
+.hamburger span {
+  display: block;
+  background-color: #222;
+  width: 30px;
+  height: 2px;
+  margin-bottom:5px;
+  
+}
+
+.logo {
+  background-image: url(./images/SDMlogo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 90px;
+  width: auto;
+}
+
+.navItems {
+  display: none;
+}
+.getStarted {
+  display: none;
+}
+
+.primaryImg {
+  background-image: url(./images/hero-min.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width:100%;
+  height: 410px;
+}
+.menu-sect {
+  width: 100%;
+  height:auto;
+}
+.menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  height: auto;
+  margin: 20px 0 10px 0;
+
+
+}
+.menu h2 {
+  font-size: 45px;
+  font-family: 'Roboto Slab', serif;
+}
+hr {
+  width: 65%;
+  /* height: .1px; */
+  color: black;
+  border: .5px solid black;
+
+}
+.menuSect p {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-size: 20px;
+  /* letter-spacing: 1px; */
+  font-weight: 300;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+.menuTypes {
+ background-color: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  padding:15px;
+ 
+}
+.type {
+  width: 48%;
+  height: auto;
+  background-color: #fff;
+  padding: 30px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menuHead h4 {
+  font-size: 27px;
+  font-family: 'Roboto Slab', serif;
+}
+.snacks {
+  list-style: none;
+}
+.snacks li {
+  display: block;
+  padding:6px;
+  border-bottom: #ccc dashed .5px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+span.orange {
+  color: rgba(241, 121, 28, 0.9);
+  font-weight: 700;
+  
+}
+.footer {
+  background-color: #fafaed;
+  padding: 20px;
+}
+.sister {
+  margin-bottom: 25px;
+}
+.sister p, a {
+  color: #222;
+  font-size: 13px;
+  /* margin: 0 0 10px 0; */
+  padding:0;
+  line-height: 20px;
+}
+.sister .link {
+  margin-bottom: 3px;
+  text-decoration: none;
+  text-decoration: underline;
+  padding-bottom: 5px;
+  color: #333;
+  font-size: 13px;
+}
+
+.footer .media {
+  color: #333;
+  font-size: 13px;
+  padding: 0;
+  line-height: 20px;
+  margin-bottom: 30px;
+}
+.email {
+  height: 35px;
+  width: 200px;
+  padding-left: 5px;
+  color: #aaa;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+}
+.subscribe {
+  height: 40px;
+  width: 80px;
+  background-color: transparent;
+  border: 1px solid #222;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  color: #222;
+  
+}
