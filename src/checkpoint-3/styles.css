@@ -6,6 +6,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 }
+
 .jm, .content h3 {
     color: #8f09e7;
     text-shadow: .5px .5px .5px #ddd;
@@ -17,6 +18,10 @@ body, html {
     font-family: "Lato";
     color: white;
 }
+.navbar-toggler:focus, .navbar-toggler:active {
+    outline: none;
+    box-shadow: none;
+  }
 
 h1 {
 	font-weight: 700;
@@ -30,7 +35,7 @@ h1 {
 }
 
 .content{
-    padding-top: 15%;
+    padding-top: 12%;
     /* padding-right: 12%; */
     width: 100%;
     text-align: center;
