@@ -1,4 +1,4 @@
-* {
+/* * {
   box-sizing: border-box;
 }
 
@@ -21,4 +21,64 @@ body {
   width: 32%;
   height: 32%;
   display: inline-block;
+} */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.title {
+  align-self: center;
+  margin-top: 5vmax;
+  padding: 5px;
+  width: 50%;
+  background-color: #6293aa;
+  text-align: center;
+  color: #222;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  border: 1px solid #222;
+  border-radius: 5%;
+}
+
+.container {
+  display: flex;
+  background: #f7f8df;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  min-width: 700px;
+  min-height: 500px;
+  border-radius: 5%;
+  margin: auto;
+}
+
+table {
+  border-collapse: collapse;
+  margin: auto;
+}
+
+td {
+  background-color: #777;
+  border: 5px solid #f7f8df;
+  font-size: 80px;
+  color: #fff;
+  border-radius: 10%;
+}
+
+#player {
+  padding: 1rem;
+}
+
+body {
+  display: flex;
+  background: #eee url(./images/bckg.jpg); 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
 }
