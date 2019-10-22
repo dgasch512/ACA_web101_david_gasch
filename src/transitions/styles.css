@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-rows: repeat(12, 1fr);
+  width: 100%;
+  height: 100%;
+  background-color: #222;
+}
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #111;
+}
+.even, .odd {
+  transition-property: transform, height, width, position,left;
+  transition-duration: 2s;
+  transition-delay: 0s;
+  transition-timing-function: ease;
+}
+.row:hover .odd {
+  position:absolute;
+  left: 80%;
+  transform: rotate(90deg);
+  height: 100px;
+  width:100px;
+}
+.row:hover .even {
+  position:absolute;
+  left: 20%;
+  transform: rotate(-90deg);
+  height: 25px;
+  width:25px;
+}
+
+.row1 {
+  background-color: rgb(150, 230, 10);
+}
+.row2 {
+  background-color: rgb(15, 230, 180);
+}
+.row3 {
+  background-color: rgb(150, 20, 60);
+}
+.row4 {
+  background-color: rgb(250, 230, 10);
+}
+.row5 {
+  background-color: rgb(10, 230, 290);
+}
+.row6 {
+  background-color: rgb(10, 20, 10);
+}
+.row7 {
+  background-color: rgb(250, 230, 210);
+}
+.row8 {
+  background-color: rgb(180, 120, 210);
+}
+.row9 {
+  background-color: rgb(200, 100, 20);
+}
+.row10 {
+  background-color: rgb(50, 30, 200);
+}
+.row11 {
+  background-color: rgb(200, 20, 200);
+}
+.row12 {
+  background-color: rgb(100, 100, 100);
+}
